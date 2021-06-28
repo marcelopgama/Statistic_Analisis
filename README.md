@@ -1,1 +1,0 @@
-# Statistic_Analisis
