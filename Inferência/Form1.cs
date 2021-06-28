@@ -3,22 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using cdrnet.Lib.MathLib;
 using MathNet.Numerics;
-using System.Collections;
 using System.IO;
-using Accord.Statistics;
-using Accord.Statistics.Distributions.Univariate;
 using System.Windows.Forms.DataVisualization.Charting;
-using System.Reflection;
-using System.Globalization;
-using Microsoft.Office.Interop;
-using System.Drawing.Printing;
-using System.IO.Compression;
+
 
 
 
