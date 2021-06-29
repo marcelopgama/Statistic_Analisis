@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using MathNet.Numerics;
 using System.IO;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Linq;
 
 
 
@@ -668,9 +669,7 @@ namespace Inferência
             tabelaDeEstatísticas();
 
             comboBox1.Enabled = true;
-            checkBox5.Enabled = true;
-            comboBox1.SelectedItem = comboBox1.Items[2];
-            comboBox1.SelectedItem = comboBox1.Items[3];
+            checkBox5.Enabled = true;            
             checkBox5.Checked = true;
             checkBox5.Checked = false;           
 
@@ -1316,7 +1315,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -1359,7 +1358,7 @@ namespace Inferência
             }
 
             RemovendoMenorQue5();
-            v = KTemp - 1;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
            
@@ -1407,7 +1406,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -1452,7 +1451,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -1496,7 +1495,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 1;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -1540,7 +1539,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -1582,7 +1581,7 @@ namespace Inferência
             }
 
             RemovendoMenorQue5();
-            v = KTemp - 1;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
 
@@ -1628,7 +1627,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -1672,7 +1671,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -1717,7 +1716,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -1763,7 +1762,7 @@ namespace Inferência
             }
             
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
 
@@ -1807,7 +1806,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -1855,7 +1854,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -1898,7 +1897,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 1;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -1941,7 +1940,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 1;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -2053,7 +2052,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 1;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -2116,7 +2115,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 1;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -2159,7 +2158,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
         }
@@ -2206,7 +2205,7 @@ namespace Inferência
                 chart4.Series[1].Points.AddXY(limites[i].ToString() + "-" + limites[i + 1].ToString(), probDasClassesEsp[i]);
             }
             RemovendoMenorQue5();
-            v = KTemp - 2;
+            v = K - 1;;
             Testes();
             textBox4.Text = distribuição.ToString()+"     Nível de Significância = "+ nivelDeSignificancia;
             
@@ -2265,7 +2264,7 @@ namespace Inferência
         //Botões        
         private void botãoCalcular(object sender, EventArgs e)
         {
-            //textBox1.Text = textBox1.Text.Replace(".", ",").Replace(" ", "");
+            nivelDeSignificancia = Convert.ToDouble(comboBox1.Text);
             ValoresDaAmostra();
             try
            {
@@ -2674,7 +2673,7 @@ namespace Inferência
         {
            
             Frequências();
-            nivelDeSignificancia = Convert.ToDouble(comboBox1.Text.Replace(",","."));
+            nivelDeSignificancia = Convert.ToDouble(comboBox1.Text);            
             tabelaSelecionada = true;            
             CalcularEstatisticas();
             tabelaSelecionada = false;
@@ -2684,7 +2683,7 @@ namespace Inferência
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Frequências();
-            nivelDeSignificancia = Convert.ToDouble(comboBox1.Text.Replace(",", "."));
+            nivelDeSignificancia = Convert.ToDouble(comboBox1.Text);
             tabelaSelecionada = true;
             CalcularEstatisticas();           
             tabelaSelecionada = false;
